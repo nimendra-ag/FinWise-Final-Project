@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard - FinWise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load Google Charts library -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Load Chart JS charts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div>
+        <nav>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="prices.html">features</a>
+                <span class="logo">FinWise</span>
+                <a href="signin.html">log out</a>
+                <a href="learn.html">learn</a>
+                
+            </nav>
+    </div>
+
+
+    <section>
+
+        <div class="section" style="margin-bottom: 30px; margin-top: 80px;" >
+            <div  style="background-image: url('img/dashboard-img.png');">
+            <div class="container pb-5" id="contact">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mt-5 text-center">
+                            <h1>Practice <b>conscious<br>spending</b></h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div  style="background-color:white; border-radius: 5px; padding: 20px;">
+                            <div class="container-fluid text-center p-1" style="background-color: #5EC57E; margin-bottom: 20px; padding-top: 20px; border-radius: 5px;">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4><span style="color: #4961D3;">Add Transactions</span></h4>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <div class="">
+                                <form role="form" id="footer-form" action="mail-it.php" method="post">
+                                    <div class="form-group mb-3">
+                                        <input type="text" class="form-control" id="name2" placeholder="Payee"
+                                            name="name2" required>
+
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="number" class="form-control" id="email2" placeholder="Amount"
+                                            name="" required>
+
+                                    </div>
+
+                            
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Account*</option>
+                                            <option value="1">People's Bank</option>
+                                            <option value="2">Bank of Ceylon</option>
+                                            <option value="3">Hatton National Bank</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group mb-3">
+                                        <input type="date" class="form-control" id="email2" placeholder="Date"
+                                            name="" required>
+
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input type="text" class="form-control" id="email2" placeholder="Check (Optional)"
+                                            name="" required>
+
+                                    </div>
+
+                                    
+                                    <input type="submit" value="Enter" class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-5">
+                        <div  style="background-color:white; border-radius: 5px; padding: 20px;">
+                            <div class="container-fluid text-center p-1" style="background-color: #5EC57E; margin-bottom: 20px; padding-top: 20px; border-radius: 5px;">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4><span style="color: #4961D3;">Add Bill Payments</span></h4>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <div class="">
+                                <form role="form" id="footer-form" action="mail-it.php" method="post">
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Bill Type*</option>
+                                            <option value="1">Electricity</option>
+                                            <option value="2">Water</option>
+                                            <option value="3">Telephone Bill</option>
+                                            <option value="4">Television Bill</option>
+                                            <option value="5">WiFi Bill</option>
+                                            <option value="6">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="month" class="form-control" id="email2"
+                                            name="" required>
+
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input type="number" class="form-control" id="email2" placeholder="Amount"
+                                            name="" required>
+
+                                    </div>
+
+                            
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Account*</option>
+                                            <option value="1">People's Bank</option>
+                                            <option value="2">Bank of Ceylon</option>
+                                            <option value="3">Hatton National Bank</option>
+                                            <option value="4">Cash</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group mb-3">
+                                        <input type="date" class="form-control" id="email2" placeholder="Date"
+                                            name="" required>
+
+                                    </div>
+
+                                    
+                                    <input type="submit" value="Enter" class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-5">
+                        <div  style="background-color:white; border-radius: 5px; padding: 20px;">
+                            <div class="container-fluid text-center p-1" style="background-color: #5EC57E; margin-bottom: 20px; padding-top: 20px; border-radius: 5px;">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4><span style="color: #4961D3;">Debts</span></h4>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <div class="">
+                                <form role="form" id="footer-form" action="mail-it.php" method="post">
+                                    <div class="form-group mb-3">
+                                        
+                                        <input type="text" class="form-control" id="name2" placeholder="Payee"
+                                            name="name2" required>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Type*</option>
+                                            <option value="1">Credit Cards</option>
+                                            <option value="2">Loans</option>
+                                            <option value="3">Student Loans</option>
+                                            <option value="4">Bank OverDraft</option>
+                                            <option value="5">Clear Pay</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <div class="form-group mb-3">
+                                        <input type="number" class="form-control" id="email2" placeholder="Amount"
+                                            name="email2" required>
+
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input type="file" class="form-control" id="email2" placeholder="Upload Proofs"
+                                            name="email2" required>
+
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="sr-only" for="message2">Message</label>
+                                        <textarea class="form-control" rows="5" id="message2" placeholder="Remarks"
+                                            name="message2" required></textarea>
+
+                                    </div>
+                                    <input type="submit" value="Enter" class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-6 mt-5">
+                        <div  style="background-color:white; border-radius: 5px; padding: 20px;">
+                            <div class="container-fluid text-center p-1" style="background-color: #5EC57E; margin-bottom: 20px; padding-top: 20px; border-radius: 5px;">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4><span style="color: #4961D3;">Add Other Transactions</span></h4>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <div class="">
+                                <form role="form" id="footer-form" action="mail-it.php" method="post">
+                                    <div class="form-group mb-3">
+
+                                        <div class="mb-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select Type*</option>
+                                                <option value="1">Food and Beverages</option>
+                                                <option value="2">Clothing</option>
+                                                <option value="3">Hair Care/ Saloon</option>
+                                                <option value="4">Subscriptions</option>
+                                                <option value="5">MembErships</option>
+                                                <option value="7">Medical Expenses</option>
+                                            </select>
+                                        </div>
+
+                                        <input type="number" class="form-control" id="name2" placeholder="Amount"
+                                            name="name2" required>
+
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input type="date" class="form-control" id="email2" placeholder="Date"
+                                            name="email2" required>
+
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="file" class="form-control" id="email2" placeholder="Upload bills(Optional)"
+                                            name="email2" required>
+
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <textarea class="form-control" rows="5" id="message2" placeholder="Remarks"
+                                            name="message2" required></textarea>
+
+                                    </div>
+
+                                   
+
+                                    <input type="submit" value="Enter" class="btn btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section class="services section-padding" id="featured-lands">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-12" style="padding-top: 50px;">
+
+                    <div id="piechart1">
+                        <p>This is the div</p>
+                    </div>
+                
+                   
+                    <script type="text/javascript">
+                
+                        //Charts*******************************************************************************
+                
+                        // Load Google Charts
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                
+                        // Draw the chart and set the chart values
+                        function drawChart(){
+                            var data = google.visualization.arrayToDataTable([
+                            ['Transactions', 'Bank'],
+                            ["People's Bank", 8],
+                            ['Bank of Ceylon', 2],
+                            ['Hatton National Bank', 2]
+                            ]);
+                
+                            // Optional; add a title and set the width and height of the chart
+                            var options = {'title': 'Transactions', 'width':660, 'height': 400};
+                
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+
+                    <h2>Transactions - This Month</h2>
+                </div>
+
+
+                <div class="col-md-6 col-12" style="padding-top: 110px;">
+                    
+
+
+                    <canvas id="myChart" style="width:100%;max-width:600px" style="margin-top: 1520px;"></canvas>
+
+                        <script>
+                        const xValues = ["Jan","Feb","Mar","Apr","May","June","July", "Aug"];
+
+                        new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{ 
+                            data: [860,1140,1060,1070,1110,2210,7830,2478],
+                            borderColor: "#DB3E4E",
+                            fill: false
+                            }, { 
+                            data: [1600,1700,1700,1900,4000,5000,6000,7000],
+                            borderColor: "#FE9C62",
+                            fill: false
+                            }, { 
+                            data: [300,700,200,4000,2000,1000,200,100],
+                            borderColor: "#3466CC",
+                            fill: false
+                            }]
+                        },
+                        options: {
+                            legend: {display: false}
+                        }
+                        });
+                        </script>
+
+
+                    <h2 style="margin-top: 40px;">Transaction - Monthly Chart</h2>
+                    
+                </div>            
+                
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-12" style="padding-top: 50px;">
+
+                    <div id="piechart2">
+                        <p>This is the div</p>
+                    </div>
+                
+                   
+                    <script type="text/javascript">
+                
+                        //Charts*******************************************************************************
+                
+                        // Load Google Charts
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                
+                        // Draw the chart and set the chart values
+                        function drawChart(){
+                            var data = google.visualization.arrayToDataTable([
+                            ['Bill Type', 'Amount'],
+                            ['Electricity', 8000],
+                            ['Water', 2000],
+                            ['Telephone', 2400],
+                            ['Television', 1980],
+                            ['WiFi', 2959],
+                            ['Other', 900]
+                            ]);
+                
+                            // Optional; add a title and set the width and height of the chart
+                            var options = {'title': 'Bill Payements', 'width': 660, 'height': 400};
+                
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+
+                    <h2>Bill Payements - This month</h2>
+                </div>
+
+
+                <div class="col-md-6 col-12" style="padding-top: 110px;">
+                    
+
+
+                    <canvas id="myChart2" style="width:100%;max-width:600px" style="margin-top: 1520px;"></canvas>
+
+                        <script>
+                        const xValues2 = ["Jan","Feb","Mar","Apr","May","June","July", "Aug"];
+
+                        new Chart("myChart2", {
+                        type: "line",
+                        data: {
+                            labels: xValues2,
+                            datasets: [{ 
+                            data: [860,1140,1060,1220,1070,1730,2210,2478],
+                            borderColor: "#FE9C62",
+                            fill: false
+                            }, { 
+                            data: [1600,1700,6000,2700,4000,5000,9000,7000],
+                            borderColor: "#40962B",
+                            fill: false
+                            }, { 
+                            data: [800,700,100,4000,2000,100,100,100],
+                            borderColor: "#9B3F9A",
+                            fill: false
+                            }, { 
+                            data: [400,700,900,4500,250,900,200,100],
+                            borderColor: "#0199C6",
+                            fill: false
+                            }, { 
+                            data: [150,700,2740,4000,2000,140,200,100],
+                            borderColor: "#DB3E4E",
+                            fill: false
+                            }, { 
+                            data: [100,7000,10000,4000,2000,1000,200,100],
+                            borderColor: "#3466CC",
+                            fill: false
+                            }]
+                        },
+                        options: {
+                            legend: {display: false}
+                        }
+                        });
+                        </script>
+
+
+                    <h2 style="margin-top: 40px;">Bill Payements - Monthly Chart</h2>
+                    
+                </div>            
+                
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-12" style="padding-top: 50px;">
+
+                    <div id="piechart3">
+                        <p>This is the div</p>
+                    </div>
+                
+                   
+                    <script type="text/javascript">
+                
+                        //Charts*******************************************************************************
+                
+                        // Load Google Charts
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                
+                        // Draw the chart and set the chart values
+                        function drawChart(){
+                            var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per day'],
+                            ['Credit Cards', 8090],
+                            ['Student Loans', 2000],
+                            ['Bank Over Drafts', 2409],
+                            ['Clear Pay', 2590]
+                            ]);
+                
+                            // Optional; add a title and set the width and height of the chart
+                            var options = {'title': 'Debts', 'width': 660, 'height': 400};
+                
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+
+                    <h2>Debts - This Month</h2>
+                </div>
+
+
+                <div class="col-md-6 col-12" style="padding-top: 110px;">
+                    
+
+
+                    <canvas id="myChart3" style="width:100%;max-width:600px" style="margin-top: 1520px;"></canvas>
+
+                        <script>
+                        const xValues3 = ["Jan","Feb","Mar","Apr","May","June","July", "Aug"];
+                        new Chart("myChart3", {
+                        type: "line",
+                        data: {
+                            labels: xValues3,
+                            datasets: [{ 
+                            data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                            borderColor: "#DB3E4E",
+                            fill: false
+                            }, { 
+                            data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                            borderColor: "#FE9C62",
+                            fill: false
+                            }, { 
+                            data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                            borderColor: "#40962B",
+                            fill: false
+                            },{ 
+                            data: [300,700,9000,8000,4100,7000,6000,9000,2100,900],
+                            borderColor: "#3466CC",
+                            fill: false
+                            }]
+                        },
+                        options: {
+                            legend: {display: false}
+                        }
+                        });
+                        </script>
+
+
+                    <h2 style="margin-top: 40px;">Debt - Monthly Chart</h2>
+                    
+                </div>            
+                
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-12" style="padding-top: 50px;">
+
+                    <div id="piechart4">
+                        <p>This is the div</p>
+                    </div>
+                
+                   
+                    <script type="text/javascript">
+                
+                        //Charts*******************************************************************************
+                
+                        // Load Google Charts
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                
+                        // Draw the chart and set the chart values
+                        function drawChart(){
+                            var data = google.visualization.arrayToDataTable([
+                            ['Type', 'Amount'],
+                            ['Food & Beverages', 800],
+                            ['Clothing', 209],
+                            ['Hair Care/ Saloon', 220],
+                            ['Subscription', 592],
+                            ['Memberships', 952],
+                            ['Medical Expenses', 1200]
+                            ]);
+                
+                            // Optional; add a title and set the width and height of the chart
+                            var options = {'title': 'Other Payements', 'width': 650, 'height': 400};
+                
+                            // Display the chart inside the <div> element with id="piechart"
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+
+                    <h2>Other Transactions - This month</h2>
+                </div>
+
+
+                <div class="col-md-6 col-12" style="padding-top: 110px;">
+                    
+
+
+                    <canvas id="myChart4" style="width:100%;max-width:600px" style="margin-top: 1520px;"></canvas>
+
+                        <script>
+                        const xValues4 = ["Jan","Feb","Mar","Apr","May","June","July", "Aug"];
+
+                        new Chart("myChart4", {
+                        type: "line",
+                        data: {
+                            labels: xValues4,
+                            datasets: [{ 
+                            data: [860,1140,1060,1060,1070,1110,1330,2210],
+                            borderColor: "#9B3F9A",
+                            fill: false
+                            }, { 
+                            data: [1600,1700,1700,1900,2000,2700,6000,7000],
+                            borderColor: "#40962B",
+                            fill: false
+                            }, { 
+                            data: [3000,470,7000,4790,8000,3080,600,700],
+                            borderColor: "#FE9C62",
+                            fill: false
+                            }, { 
+                            data: [300,7400,2000,4000,2000,1000,200,1000],
+                            borderColor: "#DB3E4E",
+                            fill: false
+                            }, { 
+                            data: [600,2300,1000,6000,8900,1670,980,7780],
+                            borderColor: "#3466CC",
+                            fill: false
+                            }, { 
+                            data: [900,5680,8900,6000,8900,5600,870,8910],
+                            borderColor: "#0199C6",
+                            fill: false
+                            }]
+                        },
+                        options: {
+                            legend: {display: false}
+                        }
+                        });
+                        </script>
+
+
+                    <h2 style="margin-top: 40px;">Other Transactios - Monthly Chart</h2>
+                    
+                </div>            
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-2 text-center"
+    style="background-image:linear-gradient(rgba(0,0,0,0.823), rgba(0,0,0,0.1))">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <div class="footer-element">
+                    <img src="img/Sanctuary_lands_favicon-removebg-preview.png" alt="Image">
+                    <h1><span class="navbar-brandname">Fin</span><span class="text-white">Wise</h1></span>
+                </div>
+                <div class="text-light  text-start" style="font-size: 12px;">
+                    <p>"A home budget app based on the envelope budget<br>system. Available on the Web, Android,and
+                        iPhone.<br>Replace your family budget planner,worksheet or<br>spreadsheet with software that
+                        syncs."
+                    </p>
+                </div>
+    
+                <div class="text-white text-start">
+                    <a href="#" style="color: inherit;"><i class="bi bi-twitter me-3"></i></a>
+                    <a href="#" style="color: inherit;"><i class="bi bi-facebook me-3"></i></i></a>
+                    <a href="#" style="color: inherit;"><i class="bi bi-youtube me-3"></i></i></a>
+                    <a href="#" style="color: inherit;"><i class="bi bi-instagram me-3"></i></a>
+                    <a href="#" style="color: inherit;"><i class="bi bi-tiktok me-3"></i></a>
+                    <a href="#" style="color: inherit;"><i class="bi bi-pinterest me-3"></i></a>
+                </div>
+    
+            </div>
+    
+            <div class="col-md-3  mb-2 mb-md-0 text-start text-white">
+                <h3>Explore</h3>
+                <br>
+                <p><a href="index.html" class="footer-links">Home</a><br>
+                    <a href="prices.html" class="footer-links">How it works</a><br>
+                    <a href="#" class="footer-links">Feedback</a><br>
+                    <a href="prices.html" class="footer-links">Features & Prices</a><br>
+                    <a href="#" class="footer-links">About Us</a><br>
+                    <a href="signup.html" class="footer-links">Sign Up</a><br>
+                    <a href="signin.html" class="footer-links">Sign In</a>
+                </p>
+            </div>
+            <div class="col-md-3  mb-2 mb-md-0 text-start text-white">
+                <h3>Get help</h3>
+                <br>
+                <p><a href="index.html" class="footer-links">User Guide</a><br>
+                    <a href="#" class="footer-links">Forums</a><br>
+                    <a href="#" class="footer-links">Feedback</a><br>
+                    <a href="#" class="footer-links">Refunds</a><br>
+                    <a href="#" class="footer-links">How to videos</a><br>
+                    <a href="#" class="footer-links">Contact Us</a><br>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div class="text-white text-start">
+                    <i class="bi bi-telephone"></i>
+                    <p>+94 112 342 342</p>
+                </div>
+    
+                <div class="text-white text-start">
+                    <i class="bi bi-envelope"></i>
+                    <p>info@finwise.com</p>
+    
+                </div>
+            </div>
+    
+    
+        </div>
+    
+        <hr class="text-white">
+        <div>
+            <p class="text-white text-light" style="font-size: 10px;">&copy; 2023 FinWise (Pvt) Ltd<br>
+                Created by ABC Web Solutions</p>
+        </div>
+    
+    </div>
+    </footer>
+    
+  
+
+</body>

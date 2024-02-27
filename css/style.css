@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: white;
+}
+
+
+
+.container-testimonial {
+	margin-top: 15%;
+}
+
+.wallstyle {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 8px;
+	margin: 4px;
+	border: 1px solid rgb(247, 250, 250);
+	border-radius: 20px 15px 50px 15px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.card .box-testimonial {
+    position: absolute;
+    color: #262626;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+.card .box-testimonial.front-testimonial{
+    background-image: url(img/pattern.png);
+    background-repeat: repeat; 
+       /* https://www.toptal.com/designers/subtlepatterns/moroccan-flower-pattern/ */
+}
+.card .box-testimonial.front-testimonial,
+.card .box-testimonial.back-testimonial {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .box-testimonial.front-testimonial img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #262626;
+	margin-bottom: 25px;
+}
+
+.card:hover .box-testimonial.front-testimonial {
+    transform: rotateY(180deg);
+}
+.box-testimonial.front-testimonial h2 {
+	font-family: 'Bebas Neue', cursive;
+}
+.box-testimonial.front-testimonial h4 {
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.socials-testimonial i {
+	margin: 0 15px;
+}
+.card .box-testimonial.back-testimonial {
+    position: absolute;
+    background: #fff;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.card .box-testimonial.back-testimonial .fa-quote-left {
+	position: absolute;
+	top: 25px;
+	left: 180px;
+	font-size: 3.2rem;
+}
+
+.card:hover .box-testimonial.back-testimonial {
+    transform: rotateY(360deg);
+}
+
+
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+.section-padding {
+	padding: 100px 0;
+}
+
+
+.navbar-brandname{
+	color:#106eea;
+}
+.custom-carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.custom-carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bacskground: rgba(20, 32, 73, 0.3);
+	z-index: 1;
+}
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #32d648;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+
+.services .card-body i {
+	font-size: 20px;
+}
+
+.lands-card-body{
+    width:100%;
+    height: 100%;
+    top:0;
+    right:-100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+.lands-card{
+    width: 320px;
+    height:500px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 8px solid #fff; */
+    position: relative;
+
+}
+
+.lands-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.lands-card-title{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+.lands-card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300px
+}
+.lands-card:hover .lands-card-body{
+    right: 0;
+}
+.lands-card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.lands-card-btn{
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.footer-element {
+	display: flex;
+	align-items: center; 
+  }
+  
+.footer-element img {
+	height: 100px;
+	margin-right: 10px; 
+  }
+ 
+.footer-links{
+	text-decoration: none;
+	color: white;
+}
+  
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+
+	@media screen and (max-width: 768px) {
+		.mini-caro-image {
+		  width: 100%;
+		}
+	  }
+	@media screen and (max-width: 768px) {
+		.table-data {
+		  font-size: 10px;
+		}
+	  }
+}
+
+sectionb {
+	height: 100vh; /* 100% of the viewport height */
+	background: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.8)), url('img/banner2sal.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white; /* text color */
+	font-size: 24px;
+}
+
+
